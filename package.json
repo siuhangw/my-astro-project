@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.1.8",
+    "@astrojs/preact": "^5.1.1",
     "@astrojs/rss": "^4.0.18",
     "astro": "^6.1.5",
+    "preact": "^10.29.1",
     "wrangler": "^4.81.0"
   },
   "overrides": {
