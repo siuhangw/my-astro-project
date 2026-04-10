@@ -1,15 +1,7 @@
 ---
-const { title, author, date } = Astro.props;
+const { url, title } = Astro.props;
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width" />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>{title}</h1>
-    <p>By {author} on {date}</p>
-  </body>
-</html>
+<a href={url}>
+  <h2>{title}</h2>
+</a>
