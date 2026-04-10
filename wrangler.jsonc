@@ -1,6 +1,8 @@
 {
 	"compatibility_date": "2026-04-09",
-	"compatibility_flags": ["global_fetch_strictly_public"],
+	"compatibility_flags": [
+		"global_fetch_strictly_public"
+	],
 	"name": "my-astro-project",
 	"main": "@astrojs/cloudflare/entrypoints/server",
 	"assets": {
