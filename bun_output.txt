@@ -1,0 +1,28 @@
+$ astro dev
+(node:125439) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+04:24:23 [@astrojs/cloudflare] Enabling image processing with Cloudflare Images for production with the "IMAGES" Images binding.
+04:24:23 [@astrojs/cloudflare] Enabling sessions with Cloudflare KV with the "SESSION" KV binding.
+04:24:24 [vite] Re-optimizing dependencies because vite config has changed
+04:24:27 [vite] ✨ new dependencies optimized: @astrojs/preact/server.js
+04:24:27 [vite] ✨ optimized dependencies changed. reloading
+04:24:27 [vite] [vite] program reload
+04:24:29 [types] Generated 1ms
+[vite] connected.
+04:24:30 [content] Syncing content
+04:24:30 [content] Content config changed
+04:24:30 [content] Clearing content store
+04:24:30 [content] Synced content
+04:24:30 [vite] Re-optimizing dependencies because vite config has changed
+04:24:30 [vite] Re-optimizing dependencies because vite config has changed
+ astro  v6.1.5 ready in 9765 ms
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+04:24:31 watching for file changes...
+04:25:46 [vite] ✨ new dependencies optimized: preact/devtools
+04:25:46 [vite] ✨ optimized dependencies changed. reloading
+04:25:46 [vite] [vite] program reload
+04:25:48 [vite] 04:25:48 [200] / 1892ms
+04:25:48 [ERROR] [vite] Uncaught exception: workerd/jsg/_virtual_includes/iterator/workerd/jsg/value.h:1480: failed: remote.jsg.TypeError: Cannot read properties of undefined (reading '__H')
+stack: /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2e90a70 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2e837e0 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2e843dc /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@510add8 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2c4bfe0 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2c4c4f0 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2c4d470 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2c4de20 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2d051e9 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fc6920 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@37066ea /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@510add8 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@3705840 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fe5960 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2e83bb0 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2e83f66 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@510add8 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2c4d770 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2c4de20 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2d051e9 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fc6920 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@37066ea /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@510add8 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@3705840 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@1fe5960 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2e83bb0 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2e83f66 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@510add8 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@510af83 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2c4d917 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@510add8 /app/node_modules/@cloudflare/workerd-linux-64/bin/workerd@510bcad
+04:25:50 [vite] 04:25:50 [200] /about/ 29ms
