@@ -1,7 +1,9 @@
 ---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
 ---
 <div id="main-menu" class="nav-links">
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
+  <a href="/" aria-current={currentPath === "" ? "page" : undefined}>Home</a>
+  <a href="/about/" aria-current={currentPath === "about/" ? "page" : undefined}>About</a>
+  <a href="/blog/" aria-current={currentPath === "blog/" ? "page" : undefined}>Blog</a>
 </div>

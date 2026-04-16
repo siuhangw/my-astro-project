@@ -83,6 +83,13 @@ h1 {
   background-color: #ff9776;
 }
 
+.nav-links a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-color: #ff9776;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
 :has(.menu[aria-expanded="true"]) .nav-links {
   display: unset;
 }
