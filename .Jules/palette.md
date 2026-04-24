@@ -9,3 +9,7 @@
 1. Icon-only buttons (like the theme toggle) benefit greatly from dynamic `aria-label` and `title` attributes that reflect the *action* they will perform rather than a static description.
 2. Generating list items (`<li>`) dynamically from components requires ensuring the component outputs the `<li>` tag directly if it's placed inside a `<ul>` or `<ol>`. Wrapping headings in anchor tags inside a list creates invalid HTML structure and a poor screen reader experience.
 **Action:** Implemented dynamic state updates for the theme toggle's `aria-label` and `title`. Refactored `BlogPost.astro` to properly wrap the anchor in an `<li>` tag, improving semantic structure and accessibility.
+
+## 2026-04-24 - Interactive States and External Links Context
+**Learning:** External links opening in a new tab without an explicit warning are disruptive for screen reader users and those navigating with a keyboard. Furthermore, flat UI components lacking `:hover`, `:focus`, and `:active` styling degrade the tactile experience, causing a lack of interactivity feedback.
+**Action:** When using external links, always apply `target="_blank"`, secure them with `rel="noopener noreferrer"`, and include an `aria-label` stating "(opens in a new tab)". Always include subtle `:hover`, `:focus`, and `:active` transitions (like slight scaling) to provide clear user feedback on interactions.
