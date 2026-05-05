@@ -1,7 +1,14 @@
 ---
 const { platform, username } = Astro.props;
 ---
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+<a
+  href={`https://www.${platform}.com/${username}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={`Follow me on ${platform} (opens in a new tab)`}
+>
+  {platform[0].toUpperCase() + platform.slice(1)}
+</a>
 
 <style>
   a {
