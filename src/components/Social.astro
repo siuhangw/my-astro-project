@@ -1,7 +1,7 @@
 ---
 const { platform, username } = Astro.props;
 ---
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+<a href={`https://www.${platform}.com/${username}`} aria-label={`Follow on ${platform}`}>{platform}</a>
 
 <style>
   a {
@@ -9,5 +9,16 @@ const { platform, username } = Astro.props;
     color: white;
     background-color: #4c1d95;
     text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+
+  a:hover,
+  a:focus {
+    background-color: #3b1673;
+    transform: scale(1.05);
+    outline: 2px solid #3b1673;
+    outline-offset: 2px;
   }
 </style>

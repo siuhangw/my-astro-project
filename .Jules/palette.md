@@ -9,3 +9,8 @@
 1. Icon-only buttons (like the theme toggle) benefit greatly from dynamic `aria-label` and `title` attributes that reflect the *action* they will perform rather than a static description.
 2. Generating list items (`<li>`) dynamically from components requires ensuring the component outputs the `<li>` tag directly if it's placed inside a `<ul>` or `<ol>`. Wrapping headings in anchor tags inside a list creates invalid HTML structure and a poor screen reader experience.
 **Action:** Implemented dynamic state updates for the theme toggle's `aria-label` and `title`. Refactored `BlogPost.astro` to properly wrap the anchor in an `<li>` tag, improving semantic structure and accessibility.
+
+## 2024-04-16 - Contextual Text and Interactive States for Links
+
+**Learning:** Generic link text (e.g., just the platform name like "twitter") lacks action context for screen reader users. Additionally, abstract link components often miss proper focus and hover states which degrades keyboard navigation visibility.
+**Action:** Added an `aria-label` to the `Social.astro` component to provide clear intent ("Follow on Twitter"), and added CSS transitions, hover, and focus-visible outlines to enhance interactive feedback.
